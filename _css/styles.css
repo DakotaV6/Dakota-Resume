@@ -1,0 +1,202 @@
+/*********************
+    Colour Palette 
+
+Coolors Exported Palette - 
+    coolors.co/0065a4-253031-c5c5c5-4c5b61-055864
+
+#0065a4 - Sapphire Blue (GV Blue)
+#253031 - Black Leather Jacket (Black)
+#c5c5c5 - Silver Sand (Light Grey)
+#4c5b61 - Feldgrau (Grey)
+#055864 - Dark Imperial Blue
+**********************/
+
+/*********************
+    Global Styles 
+**********************/
+/* border box fix*/
+html {
+    box-sizing: border-box;
+    font-size: 1.15em;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    margin: 0;
+}
+a{
+    color: #0065a4;
+}
+a:hover {
+    text-decoration: none;
+}
+a:focus {
+    outline: none;
+    border: 3px solid #055864;
+}
+h1, h2 {
+    font-family: 'Rock Salt', cursive;
+    font-weight: 500;
+}
+h1 {
+    font-size: 2rem;
+}
+h2 {
+    font-size: 1.35rem;
+    margin-top: 0;
+}
+h3 {
+    margin: 0;
+}
+.content-wrap {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 60px 40px;
+    overflow: auto;
+}
+
+.btn {
+    text-decoration: none;
+    background: #0065a4;
+    color: #c5c5c5;
+    padding: 10px;
+    display: inline-block;
+}
+
+/*********************
+   Header and Footer 
+**********************/
+header, footer {
+    background: #253031;
+    color: #c5c5c5;
+    position: relative;
+}
+/* header */
+header {
+    padding-top: 40px;
+}
+.profile-img {
+    border-radius: 50%;
+    padding-bottom: 10px;
+}
+
+header h1, header h2 {
+    color: #0065a4;
+    margin: 0;
+}
+.download {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.fa-file-download {
+    padding-left: 5px;
+}
+
+/* footer */
+footer {
+    text-align: center;
+}
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+}
+.fa-envelope {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fa-linkedin-in {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fa-github {
+    font-size: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+/*********************
+      Navigation 
+**********************/
+nav {
+    text-align: center;
+    background: #c5c5c5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    border-bottom: solid #055864 5px;
+}
+nav a {
+    display: inline-block;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav a:hover {
+    background: #0065a4;
+    color: #c5c5c5;
+}
+
+
+/*********************
+    Work Experience
+**********************/
+.work {
+    background: #c5c5c5;
+}
+h3 ~ p {
+    margin: 0;
+}
+.job-description {
+    margin-bottom: 15px;
+}
+.job-description p:first-of-type {
+    margin-top: 0;
+}
+
+/*********************
+       Education 
+**********************/
+.education {
+    background: linear-gradient(rgba(0, 101, 164, 0.8), rgba(0, 101, 164, 0.6)), url(../_images/bookshelf_background.jpg) no-repeat fixed;
+    background-size: cover;
+    color: #c5c5c5;
+    position: relative;
+}
+p + h3 {
+    margin-top: 20px;
+}
+
+/*********************
+    Media Queries 
+**********************/
+@media (min-width: 900px) {
+    .col-wide {
+        width: 70%;
+        float: left;
+        padding-left: 20px;
+    }
+    .col-narrow {
+        width: 30%;
+        float: left;
+    }
+}
+@media (max-width: 899px) {
+    html {
+        font-size: 1em;
+    }
+    header {
+        text-align: center;
+    }
+    .profile-img {
+        width: 200px;
+    }
+}
